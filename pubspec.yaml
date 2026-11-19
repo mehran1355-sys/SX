@@ -1,0 +1,46 @@
+name: stratex_terminal
+description: Stratex Terminal - Smart Trading Platform
+publish_to: 'none'
+version: 5.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+    
+  # Packageهای اصلی
+  intl: ^0.20.3
+  provider: ^6.1.1
+  http: ^1.1.0
+  shared_preferences: ^2.2.2
+  cupertino_icons: ^1.0.6
+  
+  # نمودارها و UI
+  fl_chart: ^0.65.0
+  flutter_svg: ^2.0.9
+  web_socket_channel: ^2.4.0
+  
+  # پکیج‌های صوتی و تصویری
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.0.2
+  image_picker: ^1.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+  
+  fonts:
+    - family: Vazirmatn
+      fonts:
+        - asset: assets/fonts/Vazirmatn-Regular.ttf
+        - asset: assets/fonts/Vazirmatn-Bold.ttf
+          weight: 700
